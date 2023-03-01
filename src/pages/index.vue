@@ -4,7 +4,9 @@
     <div>{{ t("home.title") }}11</div>
     <!-- <NuxtLink to="/demo">333</NuxtLink> -->
     <NuxtLink to="/demo/d-333">4444</NuxtLink>
-
+    <ul>
+      <li>sss</li>
+    </ul>
     <a href="javascript:;" @click="setLang('zh')">简体中文</a>
     <a href="javascript:;" @click="setLang('en')">English</a>
   </div>
