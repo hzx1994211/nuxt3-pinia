@@ -1,0 +1,223 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#app {
+  height: 100%;
+  font-size: 28px;
+  color: @font-color;
+}
+
+.flex-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-jc {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-ac {
+  display: flex;
+  align-items: center;
+}
+
+.link,
+a {
+  color: @blue;
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid #e0e0e0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.mg_8{
+  margin: 0 8px;
+}
+
+.text-ellipsis{
+  overflow:hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow:ellipsis;
+}
+
+.multi-line{
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; //显示几行
+}
+
+.rotate_90 {
+  transform: rotate(90deg);
+}
+.rotate_180 {
+  transform: rotate(180deg);
+}
+
+.rotate_270 {
+  transform: rotate(270deg);
+}
+
+:deep(.van-field){
+  .van-field__body{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #cdd0e0;
+
+  }
+
+}
+
+.field__body__color {
+  :deep(.van-field__body) {
+    border: 1px solid red !important;
+  }
+}
+
+.field__input__border__color {
+  :deep(.van-field__body) {
+    border: 1px solid #000000 !important;
+  }
+}
+
+
+// 用户等级背景
+.user_lv1 {
+  background: linear-gradient(180deg, #eec991 0%, #d79655 100%);
+}
+
+.user_lv10 {
+  background: linear-gradient(180deg, #a8b4ff 0%, #8593df 100%);
+}
+
+.user_lv20 {
+  background: linear-gradient(180deg, #ffd579 0%, #f29c16 100%);
+}
+
+.user_lv30 {
+  background: linear-gradient(180deg, #9fedef 0%, #52bfcc 100%);
+}
+
+.user_lv40 {
+  background: linear-gradient(180deg, #adcdff 0%, #4d8fe4 100%);
+}
+
+.user_lv50 {
+  background: linear-gradient(180deg, #d7a5ff 0%, #6e4cd7 100%);
+}
+
+.user_lv60 {
+  background: linear-gradient(180deg, #d7a5ff 0%, #6e4cd7 100%);
+}
+
+.user_lv70 {
+  background: linear-gradient(180deg, #ee91e0 0%, #7a1f9f 100%);
+}
+
+.user_lv80 {
+  background: linear-gradient(180deg, #ee91e0 0%, #7a1f9f 100%);
+}
+
+.user_lv90 {
+  background: linear-gradient(180deg, #a27dc2 0%, #2937a0 100%);
+}
+
+.user_lv100 {
+  background: linear-gradient(180deg, #a27dc2 0%, #2937a0 100%);
+  padding: 2px 5px 2px 20px;
+
+  .user-levels_img {
+    width: 40px !important;
+  }
+
+  .grade-icon {
+    position: absolute !important;
+    left: -20px !important;
+  }
+}
+
+
+// 用户等级文字颜色
+.user_grade_lv1 {
+  border-color: #D89A5F !important;
+  color: #D67D30;
+}
+
+.user_grade_lv10 {
+  border-color: #8392DE !important;
+  color: #8492DE;
+}
+
+.user_grade_lv20 {
+  border-color: #E9981B !important;
+  color: #E89A1A;
+}
+
+.user_grade_lv30 {
+  border-color: #408DA3 !important;
+  color: #3E8CA2;
+}
+
+.user_grade_lv40 {
+  border-color: #5888EC !important;
+  color: #467CE7;
+}
+
+.user_grade_lv50 {
+  border-color: #7250D8 !important;
+  color: #7150D8;
+}
+
+.user_grade_lv60 {
+  border-color: #714FD8 !important;
+  color: #7150D8;
+}
+
+.user_grade_lv70 {
+  border-color: #8429A5 !important;
+  color: #7F24A2;
+}
+.user_grade_lv80 {
+  border-color: #7D22A1 !important;
+  color: #7F24A2;
+}
+
+.user_grade_lv90 {
+  border-color: #9A78C0 !important;
+  color: #2B38A1;
+}
+
+.user_grade_lv100 {
+  border-color: #5888EC !important;
+  color: #467CE7;
+}

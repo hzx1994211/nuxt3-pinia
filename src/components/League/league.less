@@ -1,0 +1,231 @@
+.matchs_box {
+  padding: 5px 8px 5px 8px;
+  .matchs_list {
+    .matchs_item{
+      background-color: #fff;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 2px;
+      }
+      .item_top{
+        margin: 2px 4px 6px 2px;
+        font-size: 12px;
+
+        display: flex;
+        .item_top_l{
+          flex: 1;
+          display: flex;
+          align-items: center;
+          padding: 2px 0;
+          .left_time{
+            background: #EDF1F5;
+            padding: 2px 10px 2px 5px;
+            border-radius: 0px 20px 50px 0px;
+            display: flex;
+            align-items: center;
+            color: #808080;
+            .live_start{
+              color: #F03041;
+              .et{
+                display: inline-block;
+                margin-right: 4px;
+                font-family: Montserrat-SemiBold, Montserrat;
+                font-weight: 600;
+              }
+            }
+            .time{
+              display: inline-block;
+              font-family: Montserrat-SemiBold, Montserrat;
+              font-weight: 600;
+              
+            }
+            .mg_l5{
+              margin-left: 5px;
+            }
+            .second_blur{
+              color: #F03041;
+              font-weight: 600;
+              margin-left: 0px;
+              font-family: Montserrat-SemiBold, Montserrat;
+            }
+
+          }
+          .corner_kick{
+            display: flex;
+            align-items: center;
+            font-family: Montserrat-SemiBold, Montserrat;
+            font-weight: 600;
+            color: #808080;
+            .jq_icon{
+              margin: 0 5px 0 10px;
+            }
+          }
+        }
+        .item_top_r{
+          padding-left: 14px;
+          flex: 1;
+          position: relative;
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          color: #9699A8;
+          span{
+            flex: 1;
+            text-align: center;
+          }
+          .collection {
+            position: absolute;
+            top: 2px;
+            right: 0px;
+          }
+        }
+      }
+
+      .item_info{
+        display: flex;
+        padding: 0 5px 0 8px;
+        align-items: center;
+        .item_team,.item_odds{
+          flex: 1;
+        }
+        .item_team{
+          padding-bottom: 10px;
+          .item_team_info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+              display: flex;
+              align-items: center;
+            }
+            img{
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              object-fit: cover;
+              margin-right: 5px;
+            }
+            .team_name{
+              font-size: 15px;
+              color: #000000;
+            }
+            .red{
+              display: inline-block;
+              width: 10px;
+              height: 13px;
+              background: #F03041;
+              font-size: 10px;
+              color: #fff;
+              border-radius: 1px;
+              text-align: center;
+              line-height: 14px;
+              margin-left: 5px;
+            }
+            .team_score{
+              font-size: 15px;
+              font-family: Montserrat-SemiBold, Montserrat;
+              font-weight: 600;
+              color: #000000;
+              margin-left: 14px;
+            }
+          }
+          .home_info{
+            margin-bottom: 14px;
+          }
+        }
+        .item_odds{
+          padding-left: 14px;
+          .odds_item{
+            flex:1;
+            font-size: 10px;
+            color: #808080;
+            margin-bottom: 3px;
+            
+            .odds_item_t,.odds_item_b{
+              flex: 1;
+              padding: 7px 7px 7px 4px;
+              border-radius: 6px;
+              border: 1px solid #CDD0E0;
+              margin-right: 3px;
+              position: relative;
+              .odds_num{
+                font-weight: 600;
+                color: #000000;
+                font-family: Montserrat-SemiBold, Montserrat;
+              }
+              p{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              }
+              .fp_icon{
+                justify-content: center;
+              }
+              .odds_tip{
+                margin-right: 1px;
+              }
+              .lottie_web{
+                top: 0;
+                right: 1px;
+              }
+              
+            }
+            .odds_item_t{
+              margin-bottom: 3px;
+            }
+          }
+          .odds-exponent{
+            display: flex;
+            align-items: center;
+          }
+          
+          .odds_home{
+            margin-top: -8px;
+          }
+          // 大小球
+          .total_golds{
+            display: flex;
+            align-items: center;
+            li{
+              flex: 1;
+              font-weight: 600;
+              font-size: 10px;
+              color: #000000;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 0;
+              border-radius: 6px;
+              border: 1px solid #CDD0E0;
+              margin-right: 2px;
+              margin-top: -8px;
+              position: relative;
+              &:last-child{
+                margin-right: 0;
+              }
+              .lottie_web{
+                right: 5px;
+              }
+            }
+          }
+          .border_color{
+            border-color: #2E6BC4 !important;
+          }
+          .lottie_web{
+            height: 100%;
+            position: absolute;
+          }
+          .lottie_web_red{
+            color: #F03041 !important;
+          }
+          .lottie_web_green{
+            color: #15953C !important;
+          }
+        }
+      }
+    }
+  }
+  
+}

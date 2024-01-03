@@ -1,7 +1,11 @@
-import { createI18n } from 'vue-i18n'
-import en_us from '../lang/en/en.js'
-import zh_cn from '../lang/zh/zh.js'
-
+import {
+    createI18n
+} from 'vue-i18n'
+import en_us from '@/lang/en'
+import zh_cn from '@/lang/zh'
+import ja_jp from '@/lang/ja_jp'
+import ko_kr from '@/lang/ko_kr'
+import zh_hk from '@/lang/zh_hk'
 
 // const i18n = {
 //   locales: ['en', 'zh'],//有多少地区的语言就添加多少种
@@ -19,12 +23,15 @@ import zh_cn from '../lang/zh/zh.js'
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: 'zh', //Cookies.get('lang') || 'zh'
+    locale: 'ZH-CN', //Cookies.get('lang') || 'zh'
     warnHtmlMessage: false,
     messages: { //要渲染的信息，有多少语言就添加多少种
-        en: en_us,
-        zh: zh_cn
-      }
+        EN: en_us,
+        'ZH-CN': zh_cn,
+        'ZH-HK': zh_hk,
+        'KO-KR': ko_kr,
+        'JA-JP': ja_jp,
+    }
 })
 
 
